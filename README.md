@@ -1,3 +1,6 @@
+## Project Structure
+
+```text
 .
 ├── obesity_scGPT_perturbation_prediction/
 │   ├── data/
@@ -8,23 +11,14 @@
 │   │       ├── data_pyg/
 │   │       └── splits/
 │   ├── notebooks/
-│   │   ├── data/
-│   │   │   └── obesity_pert_sanity/
-│   │   │       ├── data_pyg/
-│   │   │       └── splits/
-│   │   ├── save/                  # Local notebook experiment logs
-│   │   │   └── dev_perturb_obesity_pert_sanity-*/
+│   │   ├── data/                  # Sanity check datasets
+│   │   ├── save/                  # Notebook-specific logs
 │   │   ├── Preprocess.ipynb
 │   │   └── scGPT_analysis.ipynb
-│   ├── save/                      # Main training outputs (Best Weights Only)
-│   │   ├── multitask_v1/
-│   │   ├── multitask_v2/
-│   │   ├── loss_variant_seeds/
-│   │   └── [Experimental_Trials...]
-│   ├── scripts/                   # Cluster launch & sbatch scripts
-│   └── src/                       # Core Python modules & model logic
-│
+│   ├── save/                      # Main training outputs & best weights
+│   ├── scripts/                   # Cluster launch scripts (.sh)
+│   └── src/                       # Model logic and utility modules
 └── scGPT_human/                   # Foundation Model (Pre-trained)
-    ├── args.json                  # Config
-    ├── model.pt                   # Weights (~500MB+)
-    └── vocab.json                 # Gene Vocabulary
+    ├── args.json
+    ├── model.pt
+    └── vocab.json
