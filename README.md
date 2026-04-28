@@ -22,3 +22,7 @@
     ├── args.json
     ├── model.pt
     └── vocab.json
+```
+
+## Dependencies
+Check out notebooks/install_deps.ipynb for details
