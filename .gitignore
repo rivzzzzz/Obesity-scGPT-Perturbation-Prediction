@@ -1,0 +1,14 @@
+# Data folders (The heavy stuff)
+data/
+*/data_pyg/
+*/splits/
+
+# Save/Output folders
+save/
+*.pt
+*.log
+
+# Python/System clutter
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
