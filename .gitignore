@@ -6,7 +6,7 @@ data/
 # Save/Output folders
 save/**/*.pt
 *.pt
-*.log
+
 
 # Python/System clutter
 __pycache__/

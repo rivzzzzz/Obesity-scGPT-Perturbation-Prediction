@@ -1,0 +1,28 @@
+21:07:53-scGPT-INFO-<module>: Running on 2026-04-06 21:07:53
+21:08:01-scGPT-INFO-train: | epoch   1 | 100/250 batches | lr 0.0001 | ms/batch 26.24 | loss  2.09 | mse  0.83 | ce  1.26|
+21:08:03-scGPT-INFO-train: | epoch   1 | 200/250 batches | lr 0.0001 | ms/batch 20.48 | loss  1.93 | mse  0.67 | ce  1.26|
+21:08:17-scGPT-INFO-<module>: val_metrics at epoch 1: 
+21:08:17-scGPT-INFO-<module>: {'pearson': 0.9737084559721597, 'pearson_de': 0.9864340423103973, 'pearson_delta': 0.11700629478148436, 'pearson_de_delta': 0.7190783508511193, 'mmd': 0.13971718749999984, 'cls_loss': 1.3088704427083333, 'cls_f1': 0.13414634764194489, 'l1_distance': 1.0812483593873046}
+21:08:17-scGPT-INFO-<module>: | end of epoch   1 | time: 18.40s | 
+21:08:17-scGPT-INFO-<module>: Best model with score 0.1170
+21:08:19-scGPT-INFO-train: | epoch   2 | 100/250 batches | lr 0.0001 | ms/batch 25.17 | loss  1.98 | mse  0.72 | ce  1.26|
+21:08:21-scGPT-INFO-train: | epoch   2 | 200/250 batches | lr 0.0001 | ms/batch 21.37 | loss  1.96 | mse  0.71 | ce  1.25|
+21:08:35-scGPT-INFO-<module>: val_metrics at epoch 2: 
+21:08:35-scGPT-INFO-<module>: {'pearson': 0.9755214656804341, 'pearson_de': 0.9927915953375775, 'pearson_delta': 0.08753632098022825, 'pearson_de_delta': 0.484385260085332, 'mmd': 0.07761562499999997, 'cls_loss': 1.341162109375, 'cls_f1': 0.13414634764194489, 'l1_distance': 1.0812483593873046}
+21:08:35-scGPT-INFO-<module>: | end of epoch   2 | time: 18.29s | 
+21:08:53-scGPT-INFO-<module>: test_combo_seen0_pearson_delta: nan
+21:08:53-scGPT-INFO-<module>: test_combo_seen0_pearson_delta_de: nan
+21:08:53-scGPT-INFO-<module>: test_combo_seen0_pearson_delta_top20_de_non_dropout: nan
+21:08:53-scGPT-INFO-<module>: test_combo_seen0_pearson_top20_de_non_dropout: nan
+21:08:53-scGPT-INFO-<module>: test_combo_seen1_pearson_delta: nan
+21:08:53-scGPT-INFO-<module>: test_combo_seen1_pearson_delta_de: nan
+21:08:53-scGPT-INFO-<module>: test_combo_seen1_pearson_delta_top20_de_non_dropout: nan
+21:08:53-scGPT-INFO-<module>: test_combo_seen1_pearson_top20_de_non_dropout: nan
+21:08:53-scGPT-INFO-<module>: test_combo_seen2_pearson_delta: nan
+21:08:53-scGPT-INFO-<module>: test_combo_seen2_pearson_delta_de: nan
+21:08:53-scGPT-INFO-<module>: test_combo_seen2_pearson_delta_top20_de_non_dropout: nan
+21:08:53-scGPT-INFO-<module>: test_combo_seen2_pearson_top20_de_non_dropout: nan
+21:08:53-scGPT-INFO-<module>: test_unseen_single_pearson_delta: 0.1242909231415198
+21:08:53-scGPT-INFO-<module>: test_unseen_single_pearson_delta_de: 0.6241446060213643
+21:08:53-scGPT-INFO-<module>: test_unseen_single_pearson_delta_top20_de_non_dropout: 0.6241446060213643
+21:08:53-scGPT-INFO-<module>: test_unseen_single_pearson_top20_de_non_dropout: 0.9713290664540777

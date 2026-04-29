@@ -1,0 +1,23 @@
+05:37:09-scGPT-INFO-<module>: Running on 2026-03-10 05:37:09
+05:37:27-scGPT-INFO-train: | epoch   1 | 100/250 batches | lr 0.0001 | ms/batch 82.07 | loss  1.60 | mse  0.34 | ce  1.26|
+05:37:34-scGPT-INFO-train: | epoch   1 | 200/250 batches | lr 0.0001 | ms/batch 72.19 | loss  1.51 | mse  0.24 | ce  1.27|
+05:42:25-scGPT-INFO-train: | epoch   1 | 100/250 batches | lr 0.0001 | ms/batch 72.93 | loss  1.50 | mse  0.26 | ce  1.24|
+05:42:32-scGPT-INFO-train: | epoch   1 | 200/250 batches | lr 0.0001 | ms/batch 71.68 | loss  1.61 | mse  0.27 | ce  1.34|
+05:42:45-scGPT-INFO-train: | epoch   1 | 100/250 batches | lr 0.0001 | ms/batch 73.04 | loss  1.61 | mse  0.26 | ce  1.35|
+05:42:52-scGPT-INFO-train: | epoch   1 | 200/250 batches | lr 0.0001 | ms/batch 71.27 | loss  1.51 | mse  0.25 | ce  1.26|
+05:43:22-scGPT-INFO-train: | epoch   1 | 100/250 batches | lr 0.0001 | ms/batch 74.49 | loss  1.56 | mse  0.27 | ce  1.30|
+05:43:30-scGPT-INFO-train: | epoch   1 | 200/250 batches | lr 0.0001 | ms/batch 71.37 | loss  1.53 | mse  0.26 | ce  1.27|
+05:46:08-scGPT-INFO-train: | epoch   1 | 100/250 batches | lr 0.0001 | ms/batch 73.31 | loss  1.45 | mse  0.25 | ce  1.20|
+05:46:15-scGPT-INFO-train: | epoch   1 | 200/250 batches | lr 0.0001 | ms/batch 72.01 | loss  1.53 | mse  0.26 | ce  1.27|
+05:46:55-scGPT-INFO-train: | epoch   1 | 100/250 batches | lr 0.0001 | ms/batch 73.87 | loss  1.56 | mse  0.24 | ce  1.32|
+05:47:02-scGPT-INFO-train: | epoch   1 | 200/250 batches | lr 0.0001 | ms/batch 71.11 | loss  1.49 | mse  0.25 | ce  1.23|
+05:54:37-scGPT-INFO-<module>: val_metrics at epoch 1: 
+05:54:37-scGPT-INFO-<module>: {'pearson': 0.9906135625478213, 'pearson_de': 0.9848738727190073, 'pearson_delta': 0.029607515846862796, 'pearson_de_delta': 0.49410732587657047, 'mmd': 0.030734505208333207}
+05:54:37-scGPT-INFO-<module>: | end of epoch   1 | time: 469.35s | 
+05:54:37-scGPT-INFO-<module>: Best model with score 0.0296
+05:54:44-scGPT-INFO-train: | epoch   2 | 100/250 batches | lr 0.0001 | ms/batch 72.70 | loss  1.55 | mse  0.25 | ce  1.30|
+05:54:51-scGPT-INFO-train: | epoch   2 | 200/250 batches | lr 0.0001 | ms/batch 71.64 | loss  1.50 | mse  0.25 | ce  1.25|
+06:02:26-scGPT-INFO-<module>: val_metrics at epoch 2: 
+06:02:26-scGPT-INFO-<module>: {'pearson': 0.9891900107283936, 'pearson_de': 0.9823865366854344, 'pearson_delta': 0.044209746975251416, 'pearson_de_delta': 0.4746932070794187, 'mmd': 0.04490221354166657}
+06:02:26-scGPT-INFO-<module>: | end of epoch   2 | time: 468.88s | 
+06:02:26-scGPT-INFO-<module>: Best model with score 0.0442

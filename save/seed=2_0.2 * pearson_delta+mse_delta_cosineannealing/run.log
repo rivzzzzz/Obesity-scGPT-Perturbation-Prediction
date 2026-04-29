@@ -1,0 +1,225 @@
+12:19:45-scGPT-INFO-<module>: Running on 2026-03-04 12:19:45
+12:19:45-scGPT-INFO-<module>: Configs used in this run: learning rate 0.0001, subset size 5000, batch size 32
+12:21:52-scGPT-INFO-<module>: match 5011/5075 genes in vocabulary of size 60697.
+12:21:52-scGPT-INFO-<module>: Resume model from scGPT_human/best_model.pt, the model args will override the config scGPT_human/args.json.
+12:23:03-scGPT-INFO-train: | epoch   1 | 100/1017 batches | lr 0.0001 | ms/batch 669.91 | loss  0.50 | mse  0.38 |
+12:24:09-scGPT-INFO-train: | epoch   1 | 200/1017 batches | lr 0.0001 | ms/batch 658.37 | loss  0.36 | mse  0.26 |
+12:25:15-scGPT-INFO-train: | epoch   1 | 300/1017 batches | lr 0.0001 | ms/batch 659.88 | loss  0.33 | mse  0.23 |
+12:26:21-scGPT-INFO-train: | epoch   1 | 400/1017 batches | lr 0.0001 | ms/batch 658.43 | loss  0.32 | mse  0.22 |
+12:27:26-scGPT-INFO-train: | epoch   1 | 500/1017 batches | lr 0.0001 | ms/batch 658.07 | loss  0.31 | mse  0.21 |
+12:28:32-scGPT-INFO-train: | epoch   1 | 600/1017 batches | lr 0.0001 | ms/batch 657.74 | loss  0.32 | mse  0.22 |
+12:29:38-scGPT-INFO-train: | epoch   1 | 700/1017 batches | lr 0.0001 | ms/batch 658.01 | loss  0.32 | mse  0.23 |
+12:30:44-scGPT-INFO-train: | epoch   1 | 800/1017 batches | lr 0.0001 | ms/batch 657.76 | loss  0.32 | mse  0.22 |
+12:31:49-scGPT-INFO-train: | epoch   1 | 900/1017 batches | lr 0.0001 | ms/batch 657.08 | loss  0.31 | mse  0.21 |
+12:32:55-scGPT-INFO-train: | epoch   1 | 1000/1017 batches | lr 0.0001 | ms/batch 657.14 | loss  0.32 | mse  0.22 |
+12:34:35-scGPT-INFO-main: val_metrics at epoch 1: 
+12:34:35-scGPT-INFO-main: {'pearson': 0.9971343895970358, 'pearson_de': 0.8664903440163444, 'pearson_delta': 0.10386201586345438, 'pearson_de_delta': 0.208842136452149, 'mmd': 0.1806907359182099}
+12:34:35-scGPT-INFO-main: | end of epoch   1 | time: 758.69s | 
+12:34:35-scGPT-INFO-main: Best model with score 0.1039
+12:35:41-scGPT-INFO-train: | epoch   2 | 100/1017 batches | lr 0.0001 | ms/batch 659.07 | loss  0.32 | mse  0.22 |
+12:36:46-scGPT-INFO-train: | epoch   2 | 200/1017 batches | lr 0.0001 | ms/batch 652.71 | loss  0.32 | mse  0.22 |
+12:37:52-scGPT-INFO-train: | epoch   2 | 300/1017 batches | lr 0.0001 | ms/batch 652.91 | loss  0.32 | mse  0.22 |
+12:38:57-scGPT-INFO-train: | epoch   2 | 400/1017 batches | lr 0.0001 | ms/batch 652.17 | loss  0.31 | mse  0.21 |
+12:40:02-scGPT-INFO-train: | epoch   2 | 500/1017 batches | lr 0.0001 | ms/batch 651.85 | loss  0.32 | mse  0.22 |
+12:41:07-scGPT-INFO-train: | epoch   2 | 600/1017 batches | lr 0.0001 | ms/batch 652.27 | loss  0.32 | mse  0.22 |
+12:42:13-scGPT-INFO-train: | epoch   2 | 700/1017 batches | lr 0.0001 | ms/batch 652.36 | loss  0.31 | mse  0.21 |
+12:43:18-scGPT-INFO-train: | epoch   2 | 800/1017 batches | lr 0.0001 | ms/batch 651.95 | loss  0.31 | mse  0.22 |
+12:44:23-scGPT-INFO-train: | epoch   2 | 900/1017 batches | lr 0.0001 | ms/batch 652.02 | loss  0.32 | mse  0.22 |
+12:45:28-scGPT-INFO-train: | epoch   2 | 1000/1017 batches | lr 0.0001 | ms/batch 652.04 | loss  0.31 | mse  0.21 |
+12:47:08-scGPT-INFO-main: val_metrics at epoch 2: 
+12:47:08-scGPT-INFO-main: {'pearson': 0.9967837204175258, 'pearson_de': 0.8817029287436678, 'pearson_delta': 0.10191943591357308, 'pearson_de_delta': 0.21740233945069043, 'mmd': 0.18156946614583336}
+12:47:08-scGPT-INFO-main: | end of epoch   2 | time: 752.29s | 
+12:48:14-scGPT-INFO-train: | epoch   3 | 100/1017 batches | lr 0.0001 | ms/batch 659.02 | loss  0.32 | mse  0.22 |
+12:49:19-scGPT-INFO-train: | epoch   3 | 200/1017 batches | lr 0.0001 | ms/batch 652.69 | loss  0.32 | mse  0.22 |
+12:50:25-scGPT-INFO-train: | epoch   3 | 300/1017 batches | lr 0.0001 | ms/batch 653.27 | loss  0.31 | mse  0.22 |
+12:51:30-scGPT-INFO-train: | epoch   3 | 400/1017 batches | lr 0.0001 | ms/batch 652.96 | loss  0.31 | mse  0.21 |
+12:52:35-scGPT-INFO-train: | epoch   3 | 500/1017 batches | lr 0.0001 | ms/batch 653.13 | loss  0.31 | mse  0.21 |
+12:53:41-scGPT-INFO-train: | epoch   3 | 600/1017 batches | lr 0.0001 | ms/batch 653.23 | loss  0.31 | mse  0.21 |
+12:54:46-scGPT-INFO-train: | epoch   3 | 700/1017 batches | lr 0.0001 | ms/batch 652.61 | loss  0.31 | mse  0.22 |
+12:55:51-scGPT-INFO-train: | epoch   3 | 800/1017 batches | lr 0.0001 | ms/batch 653.46 | loss  0.31 | mse  0.22 |
+12:56:56-scGPT-INFO-train: | epoch   3 | 900/1017 batches | lr 0.0001 | ms/batch 652.62 | loss  0.31 | mse  0.22 |
+12:58:02-scGPT-INFO-train: | epoch   3 | 1000/1017 batches | lr 0.0001 | ms/batch 652.83 | loss  0.32 | mse  0.22 |
+12:59:51-scGPT-INFO-main: val_metrics at epoch 3: 
+12:59:51-scGPT-INFO-main: {'pearson': 0.9972867629305168, 'pearson_de': 0.8653115279114563, 'pearson_delta': 0.11197589268336075, 'pearson_de_delta': 0.13817683409548318, 'mmd': 0.1789911361882716}
+12:59:51-scGPT-INFO-main: | end of epoch   3 | time: 762.72s | 
+12:59:51-scGPT-INFO-main: Best model with score 0.1120
+13:00:57-scGPT-INFO-train: | epoch   4 | 100/1017 batches | lr 0.0001 | ms/batch 657.12 | loss  0.32 | mse  0.22 |
+13:02:02-scGPT-INFO-train: | epoch   4 | 200/1017 batches | lr 0.0001 | ms/batch 650.45 | loss  0.31 | mse  0.22 |
+13:03:07-scGPT-INFO-train: | epoch   4 | 300/1017 batches | lr 0.0001 | ms/batch 650.73 | loss  0.31 | mse  0.22 |
+13:04:12-scGPT-INFO-train: | epoch   4 | 400/1017 batches | lr 0.0001 | ms/batch 650.98 | loss  0.32 | mse  0.22 |
+13:05:17-scGPT-INFO-train: | epoch   4 | 500/1017 batches | lr 0.0001 | ms/batch 650.96 | loss  0.31 | mse  0.22 |
+13:06:23-scGPT-INFO-train: | epoch   4 | 600/1017 batches | lr 0.0001 | ms/batch 650.64 | loss  0.31 | mse  0.22 |
+13:07:27-scGPT-INFO-train: | epoch   4 | 700/1017 batches | lr 0.0001 | ms/batch 649.32 | loss  0.32 | mse  0.22 |
+13:08:32-scGPT-INFO-train: | epoch   4 | 800/1017 batches | lr 0.0001 | ms/batch 649.33 | loss  0.31 | mse  0.21 |
+13:09:37-scGPT-INFO-train: | epoch   4 | 900/1017 batches | lr 0.0001 | ms/batch 649.38 | loss  0.31 | mse  0.21 |
+13:10:42-scGPT-INFO-train: | epoch   4 | 1000/1017 batches | lr 0.0001 | ms/batch 650.04 | loss  0.32 | mse  0.22 |
+13:12:22-scGPT-INFO-main: val_metrics at epoch 4: 
+13:12:22-scGPT-INFO-main: {'pearson': 0.9975391964449144, 'pearson_de': 0.885019094732346, 'pearson_delta': 0.1651904137064802, 'pearson_de_delta': 0.22263788622438035, 'mmd': 0.17814017650462963}
+13:12:22-scGPT-INFO-main: | end of epoch   4 | time: 750.09s | 
+13:12:22-scGPT-INFO-main: Best model with score 0.1652
+13:13:27-scGPT-INFO-train: | epoch   5 | 100/1017 batches | lr 0.0001 | ms/batch 652.39 | loss  0.32 | mse  0.22 |
+13:14:32-scGPT-INFO-train: | epoch   5 | 200/1017 batches | lr 0.0001 | ms/batch 645.48 | loss  0.31 | mse  0.22 |
+13:15:36-scGPT-INFO-train: | epoch   5 | 300/1017 batches | lr 0.0001 | ms/batch 645.38 | loss  0.31 | mse  0.21 |
+13:16:41-scGPT-INFO-train: | epoch   5 | 400/1017 batches | lr 0.0001 | ms/batch 645.46 | loss  0.31 | mse  0.22 |
+13:17:46-scGPT-INFO-train: | epoch   5 | 500/1017 batches | lr 0.0001 | ms/batch 645.34 | loss  0.32 | mse  0.22 |
+13:18:50-scGPT-INFO-train: | epoch   5 | 600/1017 batches | lr 0.0001 | ms/batch 645.32 | loss  0.32 | mse  0.22 |
+13:19:55-scGPT-INFO-train: | epoch   5 | 700/1017 batches | lr 0.0001 | ms/batch 645.39 | loss  0.31 | mse  0.22 |
+13:20:59-scGPT-INFO-train: | epoch   5 | 800/1017 batches | lr 0.0001 | ms/batch 645.29 | loss  0.31 | mse  0.21 |
+13:22:04-scGPT-INFO-train: | epoch   5 | 900/1017 batches | lr 0.0001 | ms/batch 645.28 | loss  0.31 | mse  0.21 |
+13:23:08-scGPT-INFO-train: | epoch   5 | 1000/1017 batches | lr 0.0001 | ms/batch 645.12 | loss  0.31 | mse  0.22 |
+13:24:49-scGPT-INFO-main: val_metrics at epoch 5: 
+13:24:49-scGPT-INFO-main: {'pearson': 0.9976483109005022, 'pearson_de': 0.8985543026876689, 'pearson_delta': 0.15590253456142977, 'pearson_de_delta': 0.32744048649773316, 'mmd': 0.17936395158179014}
+13:24:49-scGPT-INFO-main: | end of epoch   5 | time: 746.90s | 
+13:25:55-scGPT-INFO-train: | epoch   6 | 100/1017 batches | lr 0.0001 | ms/batch 652.19 | loss  0.31 | mse  0.21 |
+13:26:59-scGPT-INFO-train: | epoch   6 | 200/1017 batches | lr 0.0001 | ms/batch 645.48 | loss  0.31 | mse  0.21 |
+13:28:04-scGPT-INFO-train: | epoch   6 | 300/1017 batches | lr 0.0001 | ms/batch 645.52 | loss  0.31 | mse  0.22 |
+13:29:09-scGPT-INFO-train: | epoch   6 | 400/1017 batches | lr 0.0001 | ms/batch 645.56 | loss  0.32 | mse  0.22 |
+13:30:13-scGPT-INFO-train: | epoch   6 | 500/1017 batches | lr 0.0001 | ms/batch 645.36 | loss  0.31 | mse  0.22 |
+13:31:18-scGPT-INFO-train: | epoch   6 | 600/1017 batches | lr 0.0001 | ms/batch 645.31 | loss  0.31 | mse  0.22 |
+13:32:22-scGPT-INFO-train: | epoch   6 | 700/1017 batches | lr 0.0001 | ms/batch 645.38 | loss  0.31 | mse  0.21 |
+13:33:27-scGPT-INFO-train: | epoch   6 | 800/1017 batches | lr 0.0001 | ms/batch 645.45 | loss  0.31 | mse  0.22 |
+13:34:31-scGPT-INFO-train: | epoch   6 | 900/1017 batches | lr 0.0001 | ms/batch 645.18 | loss  0.32 | mse  0.22 |
+13:35:36-scGPT-INFO-train: | epoch   6 | 1000/1017 batches | lr 0.0001 | ms/batch 645.30 | loss  0.31 | mse  0.22 |
+13:37:16-scGPT-INFO-main: val_metrics at epoch 6: 
+13:37:16-scGPT-INFO-main: {'pearson': 0.9975645121921661, 'pearson_de': 0.8926924536812848, 'pearson_delta': 0.15747377617353966, 'pearson_de_delta': 0.30222782344501886, 'mmd': 0.18065220389660497}
+13:37:16-scGPT-INFO-main: | end of epoch   6 | time: 746.01s | 
+13:38:21-scGPT-INFO-train: | epoch   7 | 100/1017 batches | lr 0.0001 | ms/batch 651.90 | loss  0.31 | mse  0.21 |
+13:39:26-scGPT-INFO-train: | epoch   7 | 200/1017 batches | lr 0.0001 | ms/batch 645.22 | loss  0.31 | mse  0.22 |
+13:40:30-scGPT-INFO-train: | epoch   7 | 300/1017 batches | lr 0.0001 | ms/batch 645.53 | loss  0.32 | mse  0.22 |
+13:41:35-scGPT-INFO-train: | epoch   7 | 400/1017 batches | lr 0.0001 | ms/batch 645.88 | loss  0.32 | mse  0.22 |
+13:42:40-scGPT-INFO-train: | epoch   7 | 500/1017 batches | lr 0.0001 | ms/batch 645.29 | loss  0.31 | mse  0.21 |
+13:43:44-scGPT-INFO-train: | epoch   7 | 600/1017 batches | lr 0.0001 | ms/batch 648.06 | loss  0.31 | mse  0.22 |
+13:44:49-scGPT-INFO-train: | epoch   7 | 700/1017 batches | lr 0.0001 | ms/batch 645.44 | loss  0.31 | mse  0.22 |
+13:45:53-scGPT-INFO-train: | epoch   7 | 800/1017 batches | lr 0.0001 | ms/batch 645.31 | loss  0.31 | mse  0.21 |
+13:46:58-scGPT-INFO-train: | epoch   7 | 900/1017 batches | lr 0.0001 | ms/batch 646.33 | loss  0.31 | mse  0.22 |
+13:48:03-scGPT-INFO-train: | epoch   7 | 1000/1017 batches | lr 0.0001 | ms/batch 648.20 | loss  0.31 | mse  0.21 |
+13:49:42-scGPT-INFO-main: val_metrics at epoch 7: 
+13:49:42-scGPT-INFO-main: {'pearson': 0.9977043646230632, 'pearson_de': 0.8679850143092127, 'pearson_delta': 0.16360495769898467, 'pearson_de_delta': 0.3227209251194221, 'mmd': 0.17870290075231487}
+13:49:42-scGPT-INFO-main: | end of epoch   7 | time: 746.00s | 
+13:50:48-scGPT-INFO-train: | epoch   8 | 100/1017 batches | lr 0.0001 | ms/batch 651.19 | loss  0.32 | mse  0.22 |
+13:51:52-scGPT-INFO-train: | epoch   8 | 200/1017 batches | lr 0.0001 | ms/batch 645.34 | loss  0.31 | mse  0.21 |
+13:52:57-scGPT-INFO-train: | epoch   8 | 300/1017 batches | lr 0.0001 | ms/batch 646.55 | loss  0.31 | mse  0.21 |
+13:54:02-scGPT-INFO-train: | epoch   8 | 400/1017 batches | lr 0.0001 | ms/batch 646.63 | loss  0.31 | mse  0.21 |
+13:55:06-scGPT-INFO-train: | epoch   8 | 500/1017 batches | lr 0.0001 | ms/batch 645.84 | loss  0.31 | mse  0.21 |
+13:56:11-scGPT-INFO-train: | epoch   8 | 600/1017 batches | lr 0.0001 | ms/batch 646.63 | loss  0.31 | mse  0.22 |
+13:57:16-scGPT-INFO-train: | epoch   8 | 700/1017 batches | lr 0.0001 | ms/batch 647.04 | loss  0.31 | mse  0.22 |
+13:58:20-scGPT-INFO-train: | epoch   8 | 800/1017 batches | lr 0.0001 | ms/batch 645.16 | loss  0.31 | mse  0.22 |
+13:59:25-scGPT-INFO-train: | epoch   8 | 900/1017 batches | lr 0.0001 | ms/batch 645.26 | loss  0.32 | mse  0.22 |
+14:00:29-scGPT-INFO-train: | epoch   8 | 1000/1017 batches | lr 0.0001 | ms/batch 645.30 | loss  0.31 | mse  0.21 |
+14:02:09-scGPT-INFO-main: val_metrics at epoch 8: 
+14:02:09-scGPT-INFO-main: {'pearson': 0.9977095321979174, 'pearson_de': 0.9071484698685608, 'pearson_delta': 0.15109970107263238, 'pearson_de_delta': 0.14007089425678756, 'mmd': 0.1803065899884259}
+14:02:09-scGPT-INFO-main: | end of epoch   8 | time: 746.42s | 
+14:03:15-scGPT-INFO-train: | epoch   9 | 100/1017 batches | lr 0.0000 | ms/batch 653.10 | loss  0.32 | mse  0.22 |
+14:04:20-scGPT-INFO-train: | epoch   9 | 200/1017 batches | lr 0.0000 | ms/batch 646.08 | loss  0.31 | mse  0.21 |
+14:05:24-scGPT-INFO-train: | epoch   9 | 300/1017 batches | lr 0.0000 | ms/batch 646.30 | loss  0.31 | mse  0.21 |
+14:06:29-scGPT-INFO-train: | epoch   9 | 400/1017 batches | lr 0.0000 | ms/batch 646.11 | loss  0.31 | mse  0.21 |
+14:07:34-scGPT-INFO-train: | epoch   9 | 500/1017 batches | lr 0.0000 | ms/batch 647.38 | loss  0.31 | mse  0.22 |
+14:08:38-scGPT-INFO-train: | epoch   9 | 600/1017 batches | lr 0.0000 | ms/batch 646.61 | loss  0.31 | mse  0.21 |
+14:09:43-scGPT-INFO-train: | epoch   9 | 700/1017 batches | lr 0.0000 | ms/batch 647.00 | loss  0.31 | mse  0.21 |
+14:10:48-scGPT-INFO-train: | epoch   9 | 800/1017 batches | lr 0.0000 | ms/batch 646.31 | loss  0.32 | mse  0.22 |
+14:11:52-scGPT-INFO-train: | epoch   9 | 900/1017 batches | lr 0.0000 | ms/batch 646.48 | loss  0.31 | mse  0.21 |
+14:12:57-scGPT-INFO-train: | epoch   9 | 1000/1017 batches | lr 0.0000 | ms/batch 647.09 | loss  0.31 | mse  0.22 |
+14:14:58-scGPT-INFO-main: val_metrics at epoch 9: 
+14:14:58-scGPT-INFO-main: {'pearson': 0.9976866006771918, 'pearson_de': 0.9091604912189434, 'pearson_delta': 0.15411023029977589, 'pearson_de_delta': 0.3399366145963208, 'mmd': 0.17982946325231483}
+14:14:58-scGPT-INFO-main: | end of epoch   9 | time: 768.56s | 
+14:16:04-scGPT-INFO-train: | epoch  10 | 100/1017 batches | lr 0.0000 | ms/batch 653.22 | loss  0.32 | mse  0.22 |
+14:17:09-scGPT-INFO-train: | epoch  10 | 200/1017 batches | lr 0.0000 | ms/batch 645.60 | loss  0.31 | mse  0.21 |
+14:18:14-scGPT-INFO-train: | epoch  10 | 300/1017 batches | lr 0.0000 | ms/batch 647.35 | loss  0.31 | mse  0.21 |
+14:19:18-scGPT-INFO-train: | epoch  10 | 400/1017 batches | lr 0.0000 | ms/batch 647.14 | loss  0.31 | mse  0.22 |
+14:20:23-scGPT-INFO-train: | epoch  10 | 500/1017 batches | lr 0.0000 | ms/batch 646.55 | loss  0.31 | mse  0.21 |
+14:21:28-scGPT-INFO-train: | epoch  10 | 600/1017 batches | lr 0.0000 | ms/batch 646.11 | loss  0.31 | mse  0.21 |
+14:22:32-scGPT-INFO-train: | epoch  10 | 700/1017 batches | lr 0.0000 | ms/batch 645.28 | loss  0.31 | mse  0.21 |
+14:23:37-scGPT-INFO-train: | epoch  10 | 800/1017 batches | lr 0.0000 | ms/batch 646.17 | loss  0.31 | mse  0.21 |
+14:24:41-scGPT-INFO-train: | epoch  10 | 900/1017 batches | lr 0.0000 | ms/batch 645.15 | loss  0.31 | mse  0.21 |
+14:25:46-scGPT-INFO-train: | epoch  10 | 1000/1017 batches | lr 0.0000 | ms/batch 645.78 | loss  0.31 | mse  0.22 |
+14:27:40-scGPT-INFO-main: val_metrics at epoch 10: 
+14:27:40-scGPT-INFO-main: {'pearson': 0.9979119353235829, 'pearson_de': 0.9099377153219818, 'pearson_delta': 0.18033506939044497, 'pearson_de_delta': 0.2681116552186602, 'mmd': 0.1789147207754629}
+14:27:40-scGPT-INFO-main: | end of epoch  10 | time: 761.03s | 
+14:27:40-scGPT-INFO-main: Best model with score 0.1803
+14:28:47-scGPT-INFO-train: | epoch  11 | 100/1017 batches | lr 0.0000 | ms/batch 658.02 | loss  0.31 | mse  0.22 |
+14:29:52-scGPT-INFO-train: | epoch  11 | 200/1017 batches | lr 0.0000 | ms/batch 651.04 | loss  0.31 | mse  0.22 |
+14:30:57-scGPT-INFO-train: | epoch  11 | 300/1017 batches | lr 0.0000 | ms/batch 651.90 | loss  0.31 | mse  0.21 |
+14:32:02-scGPT-INFO-train: | epoch  11 | 400/1017 batches | lr 0.0000 | ms/batch 651.60 | loss  0.31 | mse  0.22 |
+14:33:07-scGPT-INFO-train: | epoch  11 | 500/1017 batches | lr 0.0000 | ms/batch 650.97 | loss  0.31 | mse  0.22 |
+14:34:12-scGPT-INFO-train: | epoch  11 | 600/1017 batches | lr 0.0000 | ms/batch 650.73 | loss  0.31 | mse  0.21 |
+14:35:17-scGPT-INFO-train: | epoch  11 | 700/1017 batches | lr 0.0000 | ms/batch 651.36 | loss  0.31 | mse  0.21 |
+14:36:22-scGPT-INFO-train: | epoch  11 | 800/1017 batches | lr 0.0000 | ms/batch 651.26 | loss  0.31 | mse  0.21 |
+14:37:28-scGPT-INFO-train: | epoch  11 | 900/1017 batches | lr 0.0000 | ms/batch 651.92 | loss  0.31 | mse  0.21 |
+14:38:33-scGPT-INFO-train: | epoch  11 | 1000/1017 batches | lr 0.0000 | ms/batch 651.77 | loss  0.31 | mse  0.21 |
+14:40:25-scGPT-INFO-main: val_metrics at epoch 11: 
+14:40:25-scGPT-INFO-main: {'pearson': 0.997963374056252, 'pearson_de': 0.9010665687077536, 'pearson_delta': 0.20742249255604894, 'pearson_de_delta': 0.21055703103769927, 'mmd': 0.17851786024305552}
+14:40:25-scGPT-INFO-main: | end of epoch  11 | time: 764.74s | 
+14:40:26-scGPT-INFO-main: Best model with score 0.2074
+14:41:32-scGPT-INFO-train: | epoch  12 | 100/1017 batches | lr 0.0000 | ms/batch 660.23 | loss  0.32 | mse  0.22 |
+14:42:38-scGPT-INFO-train: | epoch  12 | 200/1017 batches | lr 0.0000 | ms/batch 654.14 | loss  0.31 | mse  0.21 |
+14:43:43-scGPT-INFO-train: | epoch  12 | 300/1017 batches | lr 0.0000 | ms/batch 654.22 | loss  0.31 | mse  0.22 |
+14:44:48-scGPT-INFO-train: | epoch  12 | 400/1017 batches | lr 0.0000 | ms/batch 654.76 | loss  0.31 | mse  0.21 |
+14:45:54-scGPT-INFO-train: | epoch  12 | 500/1017 batches | lr 0.0000 | ms/batch 652.74 | loss  0.31 | mse  0.21 |
+14:46:59-scGPT-INFO-train: | epoch  12 | 600/1017 batches | lr 0.0000 | ms/batch 653.11 | loss  0.31 | mse  0.21 |
+14:48:04-scGPT-INFO-train: | epoch  12 | 700/1017 batches | lr 0.0000 | ms/batch 653.37 | loss  0.31 | mse  0.22 |
+14:49:10-scGPT-INFO-train: | epoch  12 | 800/1017 batches | lr 0.0000 | ms/batch 653.70 | loss  0.31 | mse  0.21 |
+14:50:15-scGPT-INFO-train: | epoch  12 | 900/1017 batches | lr 0.0000 | ms/batch 653.95 | loss  0.32 | mse  0.22 |
+14:51:21-scGPT-INFO-train: | epoch  12 | 1000/1017 batches | lr 0.0000 | ms/batch 657.47 | loss  0.31 | mse  0.21 |
+14:53:04-scGPT-INFO-main: val_metrics at epoch 12: 
+14:53:04-scGPT-INFO-main: {'pearson': 0.997983450867528, 'pearson_de': 0.9011792021592426, 'pearson_delta': 0.20914524553206432, 'pearson_de_delta': 0.2868322384307171, 'mmd': 0.1783785373263889}
+14:53:04-scGPT-INFO-main: | end of epoch  12 | time: 757.52s | 
+14:53:04-scGPT-INFO-main: Best model with score 0.2091
+14:54:10-scGPT-INFO-train: | epoch  13 | 100/1017 batches | lr 0.0000 | ms/batch 659.78 | loss  0.32 | mse  0.22 |
+14:55:16-scGPT-INFO-train: | epoch  13 | 200/1017 batches | lr 0.0000 | ms/batch 655.70 | loss  0.31 | mse  0.22 |
+14:56:21-scGPT-INFO-train: | epoch  13 | 300/1017 batches | lr 0.0000 | ms/batch 651.13 | loss  0.31 | mse  0.21 |
+14:57:26-scGPT-INFO-train: | epoch  13 | 400/1017 batches | lr 0.0000 | ms/batch 654.40 | loss  0.31 | mse  0.21 |
+14:58:32-scGPT-INFO-train: | epoch  13 | 500/1017 batches | lr 0.0000 | ms/batch 651.83 | loss  0.31 | mse  0.21 |
+14:59:37-scGPT-INFO-train: | epoch  13 | 600/1017 batches | lr 0.0000 | ms/batch 652.87 | loss  0.31 | mse  0.21 |
+15:00:42-scGPT-INFO-train: | epoch  13 | 700/1017 batches | lr 0.0000 | ms/batch 651.59 | loss  0.31 | mse  0.22 |
+15:01:48-scGPT-INFO-train: | epoch  13 | 800/1017 batches | lr 0.0000 | ms/batch 659.75 | loss  0.31 | mse  0.21 |
+15:02:53-scGPT-INFO-train: | epoch  13 | 900/1017 batches | lr 0.0000 | ms/batch 651.55 | loss  0.31 | mse  0.21 |
+15:03:58-scGPT-INFO-train: | epoch  13 | 1000/1017 batches | lr 0.0000 | ms/batch 650.74 | loss  0.31 | mse  0.22 |
+15:05:49-scGPT-INFO-main: val_metrics at epoch 13: 
+15:05:49-scGPT-INFO-main: {'pearson': 0.9980325114483399, 'pearson_de': 0.9076664216012011, 'pearson_delta': 0.2104052879618366, 'pearson_de_delta': 0.2960631648120471, 'mmd': 0.1786248722029321}
+15:05:49-scGPT-INFO-main: | end of epoch  13 | time: 765.22s | 
+15:05:50-scGPT-INFO-main: Best model with score 0.2104
+15:06:56-scGPT-INFO-train: | epoch  14 | 100/1017 batches | lr 0.0000 | ms/batch 657.63 | loss  0.31 | mse  0.21 |
+15:08:01-scGPT-INFO-train: | epoch  14 | 200/1017 batches | lr 0.0000 | ms/batch 650.76 | loss  0.31 | mse  0.22 |
+15:09:06-scGPT-INFO-train: | epoch  14 | 300/1017 batches | lr 0.0000 | ms/batch 651.91 | loss  0.31 | mse  0.22 |
+15:10:11-scGPT-INFO-train: | epoch  14 | 400/1017 batches | lr 0.0000 | ms/batch 650.62 | loss  0.31 | mse  0.22 |
+15:11:16-scGPT-INFO-train: | epoch  14 | 500/1017 batches | lr 0.0000 | ms/batch 651.69 | loss  0.31 | mse  0.22 |
+15:12:22-scGPT-INFO-train: | epoch  14 | 600/1017 batches | lr 0.0000 | ms/batch 659.89 | loss  0.31 | mse  0.21 |
+15:13:27-scGPT-INFO-train: | epoch  14 | 700/1017 batches | lr 0.0000 | ms/batch 650.86 | loss  0.31 | mse  0.21 |
+15:14:32-scGPT-INFO-train: | epoch  14 | 800/1017 batches | lr 0.0000 | ms/batch 651.14 | loss  0.31 | mse  0.21 |
+15:15:38-scGPT-INFO-train: | epoch  14 | 900/1017 batches | lr 0.0000 | ms/batch 650.93 | loss  0.31 | mse  0.21 |
+15:16:43-scGPT-INFO-train: | epoch  14 | 1000/1017 batches | lr 0.0000 | ms/batch 652.05 | loss  0.31 | mse  0.21 |
+15:18:33-scGPT-INFO-main: val_metrics at epoch 14: 
+15:18:33-scGPT-INFO-main: {'pearson': 0.9980511275877038, 'pearson_de': 0.9042662381677482, 'pearson_delta': 0.22119756156612383, 'pearson_de_delta': 0.2842473962583333, 'mmd': 0.17867538821373458}
+15:18:33-scGPT-INFO-main: | end of epoch  14 | time: 762.70s | 
+15:18:33-scGPT-INFO-main: Best model with score 0.2212
+15:19:39-scGPT-INFO-train: | epoch  15 | 100/1017 batches | lr 0.0000 | ms/batch 657.20 | loss  0.31 | mse  0.21 |
+15:20:44-scGPT-INFO-train: | epoch  15 | 200/1017 batches | lr 0.0000 | ms/batch 648.58 | loss  0.32 | mse  0.22 |
+15:21:49-scGPT-INFO-train: | epoch  15 | 300/1017 batches | lr 0.0000 | ms/batch 650.28 | loss  0.31 | mse  0.21 |
+15:22:54-scGPT-INFO-train: | epoch  15 | 400/1017 batches | lr 0.0000 | ms/batch 651.08 | loss  0.31 | mse  0.21 |
+15:23:59-scGPT-INFO-train: | epoch  15 | 500/1017 batches | lr 0.0000 | ms/batch 649.29 | loss  0.31 | mse  0.21 |
+15:25:04-scGPT-INFO-train: | epoch  15 | 600/1017 batches | lr 0.0000 | ms/batch 650.90 | loss  0.31 | mse  0.21 |
+15:26:09-scGPT-INFO-train: | epoch  15 | 700/1017 batches | lr 0.0000 | ms/batch 651.58 | loss  0.31 | mse  0.21 |
+15:27:14-scGPT-INFO-train: | epoch  15 | 800/1017 batches | lr 0.0000 | ms/batch 649.23 | loss  0.31 | mse  0.21 |
+15:28:19-scGPT-INFO-train: | epoch  15 | 900/1017 batches | lr 0.0000 | ms/batch 649.72 | loss  0.31 | mse  0.22 |
+15:29:24-scGPT-INFO-train: | epoch  15 | 1000/1017 batches | lr 0.0000 | ms/batch 650.05 | loss  0.31 | mse  0.21 |
+15:31:04-scGPT-INFO-main: val_metrics at epoch 15: 
+15:31:04-scGPT-INFO-main: {'pearson': 0.998070148762172, 'pearson_de': 0.9034896927791647, 'pearson_delta': 0.2265489038615611, 'pearson_de_delta': 0.29519302699458205, 'mmd': 0.17848943383487653}
+15:31:04-scGPT-INFO-main: | end of epoch  15 | time: 750.61s | 
+15:31:04-scGPT-INFO-main: Best model with score 0.2265
+15:36:13-scGPT-INFO-main: {'pearson': 0.9978394982394384, 'pearson_de': 0.8831153727200689, 'pearson_delta': 0.1530962289310704, 'pearson_de_delta': 0.12261022283093885, 'mmd': 0.1782895878991369}
+15:36:16-scGPT-INFO-main: test_combo_seen0_pearson_delta: nan
+15:36:16-scGPT-INFO-main: test_combo_seen0_pearson_delta_de: nan
+15:36:16-scGPT-INFO-main: test_combo_seen0_pearson_delta_top20_de_non_dropout: nan
+15:36:16-scGPT-INFO-main: test_combo_seen0_pearson_top20_de_non_dropout: nan
+15:36:16-scGPT-INFO-main: test_combo_seen1_pearson_delta: nan
+15:36:16-scGPT-INFO-main: test_combo_seen1_pearson_delta_de: nan
+15:36:16-scGPT-INFO-main: test_combo_seen1_pearson_delta_top20_de_non_dropout: nan
+15:36:16-scGPT-INFO-main: test_combo_seen1_pearson_top20_de_non_dropout: nan
+15:36:16-scGPT-INFO-main: test_combo_seen2_pearson_delta: nan
+15:36:16-scGPT-INFO-main: test_combo_seen2_pearson_delta_de: nan
+15:36:16-scGPT-INFO-main: test_combo_seen2_pearson_delta_top20_de_non_dropout: nan
+15:36:16-scGPT-INFO-main: test_combo_seen2_pearson_top20_de_non_dropout: nan
+15:36:16-scGPT-INFO-main: test_unseen_single_pearson_delta: 0.1530962289310704
+15:36:16-scGPT-INFO-main: test_unseen_single_pearson_delta_de: 0.3119558011724192
+15:36:16-scGPT-INFO-main: test_unseen_single_pearson_delta_top20_de_non_dropout: 0.3325935993286616
+15:36:16-scGPT-INFO-main: test_unseen_single_pearson_top20_de_non_dropout: 0.893945690855446

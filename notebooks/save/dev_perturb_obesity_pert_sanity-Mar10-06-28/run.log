@@ -1,0 +1,12 @@
+06:28:04-scGPT-INFO-<module>: Running on 2026-03-10 06:28:04
+06:28:22-scGPT-INFO-train: | epoch   1 | 100/250 batches | lr 0.0001 | ms/batch 81.27 | loss  1.60 | mse  0.34 | ce  1.26|
+06:28:30-scGPT-INFO-train: | epoch   1 | 200/250 batches | lr 0.0001 | ms/batch 71.03 | loss  1.51 | mse  0.24 | ce  1.27|
+06:36:04-scGPT-INFO-<module>: val_metrics at epoch 1: 
+06:36:04-scGPT-INFO-<module>: {'pearson': 0.9945580997502786, 'pearson_de': 0.9896919660874048, 'pearson_delta': 0.025285337865033654, 'pearson_de_delta': 0.5950677391808367, 'mmd': 0.026087543402777635, 'cls_loss': 1.3252325224876405, 'cls_acc': 0.36666666666666664, 'cls_f1': 0.13414634764194489}
+06:36:04-scGPT-INFO-<module>: | end of epoch   1 | time: 469.72s | 
+06:36:04-scGPT-INFO-<module>: Best model with score 0.0253
+06:36:11-scGPT-INFO-train: | epoch   2 | 100/250 batches | lr 0.0001 | ms/batch 71.43 | loss  1.50 | mse  0.26 | ce  1.24|
+06:36:18-scGPT-INFO-train: | epoch   2 | 200/250 batches | lr 0.0001 | ms/batch 70.51 | loss  1.62 | mse  0.27 | ce  1.35|
+06:43:52-scGPT-INFO-<module>: val_metrics at epoch 2: 
+06:43:52-scGPT-INFO-<module>: {'pearson': 0.9943014002201194, 'pearson_de': 0.9891601011372653, 'pearson_delta': 0.02280372685519946, 'pearson_de_delta': 0.5805260185103498, 'mmd': 0.023609071180555663, 'cls_loss': 1.3556893694400787, 'cls_acc': 0.36666666666666664, 'cls_f1': 0.20741915702819824}
+06:43:52-scGPT-INFO-<module>: | end of epoch   2 | time: 468.29s | 

@@ -1,0 +1,21 @@
+15:30:18-scGPT-INFO-<module>: Running on 2026-03-03 15:30:18
+15:30:18-scGPT-INFO-<module>: Configs used in this run: learning rate 0.0001, subset size 5000, batch size 32
+15:32:26-scGPT-INFO-<module>: match 5011/5075 genes in vocabulary of size 60697.
+15:32:26-scGPT-INFO-<module>: Resume model from scGPT_human/best_model.pt, the model args will override the config scGPT_human/args.json.
+15:38:43-scGPT-INFO-main: {'pearson': -0.5379950734289305, 'pearson_de': -0.08234213213994204, 'pearson_delta': 0.018180767687205782, 'pearson_de_delta': 0.39034138008587177, 'mmd': 0.7805953155660543}
+15:38:46-scGPT-INFO-main: test_combo_seen0_pearson_delta: nan
+15:38:46-scGPT-INFO-main: test_combo_seen0_pearson_delta_de: nan
+15:38:46-scGPT-INFO-main: test_combo_seen0_pearson_delta_top20_de_non_dropout: nan
+15:38:46-scGPT-INFO-main: test_combo_seen0_pearson_top20_de_non_dropout: nan
+15:38:46-scGPT-INFO-main: test_combo_seen1_pearson_delta: nan
+15:38:46-scGPT-INFO-main: test_combo_seen1_pearson_delta_de: nan
+15:38:46-scGPT-INFO-main: test_combo_seen1_pearson_delta_top20_de_non_dropout: nan
+15:38:46-scGPT-INFO-main: test_combo_seen1_pearson_top20_de_non_dropout: nan
+15:38:46-scGPT-INFO-main: test_combo_seen2_pearson_delta: nan
+15:38:46-scGPT-INFO-main: test_combo_seen2_pearson_delta_de: nan
+15:38:46-scGPT-INFO-main: test_combo_seen2_pearson_delta_top20_de_non_dropout: nan
+15:38:46-scGPT-INFO-main: test_combo_seen2_pearson_top20_de_non_dropout: nan
+15:38:46-scGPT-INFO-main: test_unseen_single_pearson_delta: 0.018180767687205782
+15:38:46-scGPT-INFO-main: test_unseen_single_pearson_delta_de: 0.43613742436128244
+15:38:46-scGPT-INFO-main: test_unseen_single_pearson_delta_top20_de_non_dropout: 0.4445169559190621
+15:38:46-scGPT-INFO-main: test_unseen_single_pearson_top20_de_non_dropout: -0.16874981772583728
