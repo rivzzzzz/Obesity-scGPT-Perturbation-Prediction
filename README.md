@@ -26,3 +26,10 @@
 
 ## Dependencies
 Check out notebooks/install_deps.ipynb for details
+
+
+## Data
+Data is from [this](https://hub.crunchdao.com/competitions/broad-obesity-1/leaderboard) competition. 
+
+## Weights
+Model weights can be provided if requested. 
