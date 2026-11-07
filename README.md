@@ -116,3 +116,25 @@ break every other concurrently running notebook/job on the same user environment
 ## Weights
 
 Model weights can be provided if requested.
+
+## Citations
+
+This project builds on scGPT and GEARS:
+
+```bibtex
+@article{cui2023scGPT,
+  title={scGPT: Towards Building a Foundation Model for Single-Cell Multi-omics Using Generative AI},
+  author={Cui, Haotian and Wang, Chloe and Maan, Hassaan and Pang, Kuan and Luo, Fengning and Wang, Bo},
+  journal={bioRxiv},
+  year={2023},
+  publisher={Cold Spring Harbor Laboratory}
+}
+
+@article{roohani2023predicting,
+  title={Predicting transcriptional outcomes of novel multigene perturbations with GEARS},
+  author={Roohani, Yusuf and Huang, Kexin and Leskovec, Jure},
+  journal={Nature Biotechnology},
+  year={2023},
+  publisher={Nature Publishing Group US New York}
+}
+```
