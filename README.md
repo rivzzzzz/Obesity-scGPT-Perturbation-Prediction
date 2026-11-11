@@ -109,9 +109,88 @@ This is a shared DSMLP login node — no training runs directly on it. The workf
 
 ## Dependencies
 
-See `notebooks/Install_deps.ipynb` and `requirements.txt`. Dependencies are pinned — avoid ad hoc
-`pip install`/upgrades in the shared environment, since a stray transitive upgrade (e.g. `numpy`) can
-break every other concurrently running notebook/job on the same user environment.
+Base environment is the cluster image `ghcr.io/ucsd-ets/scipy-ml-notebook:2025.1-stable`
+(Python 3.11.9), with everything below installed into `~/.local` via `pip install --user` so it
+shadows the image's own torch. `numpy`, `scipy`, `pandas`, `h5py`, `matplotlib` and `scikit-learn`
+come from the image and are deliberately *not* reinstalled locally.
+
+### Step 1 — get the flash-attn wheel yourself
+
+**This wheel is not in the repo** (it's a ~191 MB binary), so you have to download it before running
+the install. It must be the exact build matching Python 3.11 / torch 2.2 / CUDA 12 / `abiFALSE`:
+
+```bash
+wget https://github.com/Dao-AILab/flash-attention/releases/download/v2.7.3/flash_attn-2.7.3%2Bcu12torch2.2cxx11abiFALSE-cp311-cp311-linux_x86_64.whl
+```
+
+Place it in `notebooks/` (or adjust the path in the install below). Don't substitute a different
+build or `pip install flash-attn` from source — a mismatched wheel (wrong `cp` tag, `cu11`,
+`abiTRUE`, or a torch version other than 2.2) will either refuse to install or import-fail at
+runtime, and a source build needs nvcc plus a long compile.
+
+### Step 2 — pinned install, in this order
+
+The constraint file is what keeps this stable; it has to be written before any `pip` call so the
+pins apply to every resolution. See `notebooks/Install_deps.ipynb` for the original notebook version.
+
+```python
+import os, sys
+os.environ["PIP_CONSTRAINT"] = os.path.expanduser("~/constraints.txt")
+open(os.environ["PIP_CONSTRAINT"], "w").write("""\
+numpy==1.26.4
+torch==2.2.0
+scipy<1.14
+jax<=0.4.23
+jaxlib<=0.4.23
+flax<0.8
+""")
+PIP = f"{sys.executable} -m pip install --user"
+```
+
+```python
+!rm -rf ~/.local/lib/python3.11/site-packages/* ~/.local/bin/*
+
+!{PIP} --upgrade pip setuptools wheel
+!{PIP} torch==2.2.0 --index-url https://download.pytorch.org/whl/cu121
+!{PIP} --no-deps flash_attn-2.7.3+cu12torch2.2cxx11abiFALSE-cp311-cp311-linux_x86_64.whl einops
+!{PIP} scvi-tools==0.20.3 scanpy==1.9.3 anndata==0.9.2 scib==1.1.7
+!{PIP} --no-deps torchtext==0.17.0 torchdata==0.7.1
+!{PIP} "numba>=0.55.1" "scikit-misc>=0.1.4" "umap-learn>=0.5.3" "leidenalg>=0.8.10" "datasets>=2.3.0,<3.0" "typing-extensions>=4.2.0,<5.0" "cell-gears<0.0.3" "orbax<0.1.8"
+!{PIP} --no-deps torch-scatter torch-sparse torch-cluster torch-spline-conv torch-geometric -f https://data.pyg.org/whl/torch-2.2.0+cu121.html --no-cache-dir
+!{PIP} --no-deps scgpt
+!{PIP} wandb faiss-cpu nbformat
+```
+
+`simplejson` gets pulled into `~/.local` and shadows the image's copy, so remove it afterwards:
+
+```python
+!rm -rf ~/.local/lib/python3.11/site-packages/simplejson
+```
+
+Verify:
+
+```python
+import numpy, torch, scgpt
+print("numpy", numpy.__version__, "torch", torch.__version__, "scgpt", scgpt.__version__)
+# numpy 1.26.4 torch 2.2.0+cu121 scgpt 0.2.4
+```
+
+### Why the order matters
+
+- **torch first.** The flash-attn wheel (`cu12torch2.2`) and every PyG wheel (`pt22cu121`) are
+  compiled against torch 2.2.0+cu121. Install them first and pip fetches its own torch to satisfy
+  them, breaking the pin.
+- **`--no-deps` on `torchtext`/`torchdata`/PyG** — each declares a torch requirement that would
+  otherwise install a second torch build over the top of 2.2.0.
+- **`scgpt` second-to-last, with `--no-deps`.** Since pip fetches nothing for it, all of its
+  dependencies must already be on disk; move it earlier and imports fail, drop `--no-deps` and it
+  drags in its own torch and numpy.
+- **`scvi-tools` before the loose-pin group**, since it's what pulls the jax/flax/orbax chain the
+  constraints need to catch.
+
+Avoid ad hoc `pip install`/upgrades in this environment afterwards: `~/.local` is mounted into every
+pod and any live Jupyter kernel, so a stray transitive upgrade (notably `numpy` to 2.x, which breaks
+ABI compatibility with the image's compiled `pandas`/`h5py`/`numexpr`) will break running jobs.
 
 ## Weights
 
